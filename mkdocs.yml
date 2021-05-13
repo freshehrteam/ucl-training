@@ -1,0 +1,5 @@
+site_name: UCL / Manchester - S & I openEHR Workshop
+theme:
+    name: material
+    palette:
+        primary: teal
