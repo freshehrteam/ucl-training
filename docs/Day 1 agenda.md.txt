@@ -1,4 +1,4 @@
-# openEHR workshop Session 1
+# Clinical record modelling workshop Session 1
 
 ## Agenda
  

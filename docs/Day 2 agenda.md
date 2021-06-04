@@ -1,17 +1,14 @@
-# openEHR workshop Session 2
+# Clinical record modelling workshop Session 2
 
 ## Agenda
 
-| Topic                                    | Dtn. | Start | End   |
-| ---------------------------------------- | ---- | ----- | ----- |
-| Archetypes in more detail                | 45   | 10:05 | 10:50 |
-| Break                                    | 10   | 10:50 | 11:00 |
-| Build an  openEHR app demo               | 45   | 11:00 | 11:45 |
-| Break                                    | 5    | 11:45 | 11:50 |
-| Practical  modelling                     | 45   | 11:50 | 12:35 |
-| Break                                    | 5    | 12:35 | 12:40 |
-| Tech  intro/ wash-up                     | 20   | 12:40 | 13:00 |
+In this session we will go further into the key ideas behind archetypes and templates, followed by a practical demonstration of building an openEHR-based app
 
+Finally there will be a practical introduction to the openEHR Archetype Designer clinical modelling tool, via a worked example based on a real clinical dataset, and the openEHR Clinical Knowledge Manager.
+
+- Archetype modelling in more detail 
+- Build an openEHR app demo 
+- Practical  modelling        
 
 ## Practical session - Getting started
 
@@ -24,12 +21,17 @@
 3. Login: 		`freshehr_training`	
    Password: 	`ad4freshtraining`
 
-4. Choose the repository allocated to you – Aberdeen, Dundee, Perth, Helsinki, Inverness 
+4. Choose the repository allocated to you – (A) Aberdeen, (B) Balloch, (C) Carnoustie, (D) Dundee, (E) Edinburgh 
 
 5. Find ‘Nursing Admission Assessment STARTER.v0' in the list of templates. This will open the template.
 
-6. Open the original ['Nursing Admission Assessment paper form'](Nursing%20Admission%20Assessment.pdf) (Best if you open this link in a new tab). 
+6. Open the original ['Nursing Admission Assessment paper form'](Nursing%20Admission%20Assessment.pdf)  
+    (Best opened in a new tab).
 
+	
+![](images/nursing-admission.png)
+
+# Practical modelling tasks
 
 ## A. Tidy the basic template
 
@@ -86,6 +88,10 @@ You can view the original document here
 
 ['Additional Information on Admission'](Additional%20information%20on%20admission.pdf) (Best if you open this link in a new tab).
 
+![](images/additional-info.png)
+
+
+## Additional information Tasks
 
 - Create a new ADMIN_ENTRY archetype called ‘Inpatient admission details’ then add these ‘element’ datapoints ...
 

@@ -1,22 +1,14 @@
-# openEHR workshop Session 1
+# Clinical record modelling workshop Session 1
 
 ## Agenda
  
-| Topic                                    | Dtn. | Start | End   |
-| ---------------------------------------- | ---- | ----- | ----- |
-| Intro			 ?                         | 10   | 09:00 | 09:10 |
-| What is openEHR?                         | 45   | 09:10 | 09:55 |
-| Break                                    | 10   | 09:55 | 10:05 |
-| Introduction  to Archetype and Templates | 45   | 10:05 | 10:50 |
-
-
-
-
+ This session we will describe the challenge of building healthIT and present an overview of openEHR, the open platform ecosystem and the unique 2-level clinical modelling methodology, developed by the openEHR community.                                 
+ 
+- What is openEHR?                        
+- Introduction  to Archetypes and Templates
 
 
 ### Further reading
-
-#### General Information:
 
 openEHR website: https://www.openehr.org/
 
