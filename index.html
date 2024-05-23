@@ -10,8 +10,6 @@
       
       
       
-        <link rel="next" href="Day%202%20agenda/">
-      
       <link rel="icon" href="assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.5">
     
@@ -220,35 +218,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#httpsfreshehrteamgithubioucl-training" class="md-nav__link">
+    https://freshehrteam.github.io/ucl-training/
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#agenda" class="md-nav__link">
     Agenda
   </a>
   
-    <nav class="md-nav" aria-label="Agenda">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#further-reading" class="md-nav__link">
-    Further reading
-  </a>
-  
-    <nav class="md-nav" aria-label="Further reading">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#social-care-examples" class="md-nav__link">
-    Social Care Examples:
-  </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#practical-session-getting-started" class="md-nav__link">
+    Practical session - Getting started
+  </a>
   
 </li>
       
@@ -256,21 +242,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="Day%202%20agenda/" class="md-nav__link">
-        Day 2 agenda
-      </a>
     </li>
   
 
@@ -302,35 +273,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#httpsfreshehrteamgithubioucl-training" class="md-nav__link">
+    https://freshehrteam.github.io/ucl-training/
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#agenda" class="md-nav__link">
     Agenda
   </a>
   
-    <nav class="md-nav" aria-label="Agenda">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#further-reading" class="md-nav__link">
-    Further reading
-  </a>
-  
-    <nav class="md-nav" aria-label="Further reading">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#social-care-examples" class="md-nav__link">
-    Social Care Examples:
-  </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#practical-session-getting-started" class="md-nav__link">
+    Practical session - Getting started
+  </a>
   
 </li>
       
@@ -349,19 +308,159 @@
                   
 
 
-<p><img alt="img.png" src="img.png" /></p>
+<p><img alt="UCL logo" src="img.png" /></p>
 <h1 id="clinical-record-modelling-workshop">Clinical record modelling workshop</h1>
+<h3 id="httpsfreshehrteamgithubioucl-training">https://freshehrteam.github.io/ucl-training/</h3>
+<p><img alt="img_2.png" src="img_2.png" /></p>
 <h2 id="agenda">Agenda</h2>
-<p>This session we will describe the challenge of building healthIT and present an overview of openEHR, the open platform ecosystem and the unique 2-level clinical modelling methodology, developed by the openEHR community.                                 </p>
+<p>In this session we will go further into the key ideas behind archetypes and templates, followed by a practical demonstration of building an openEHR-based app</p>
+<p>Finally there will be a practical introduction to the openEHR Archetype Designer clinical modelling tool, via a worked example based on a real clinical dataset, and the openEHR Clinical Knowledge Manager.</p>
 <ul>
-<li>What is openEHR?                        </li>
-<li>Introduction  to Archetypes and Templates</li>
+<li>Archetype modelling in more detail</li>
+<li>Build an openEHR app demo</li>
+<li>Practical  modelling</li>
 </ul>
-<h3 id="further-reading">Further reading</h3>
+<h2 id="practical-session-getting-started">Practical session - Getting started</h2>
+<ol>
+<li>
+<p>Open a web browser – Chrome or Firefox are best</p>
+</li>
+<li>
+<p>Go to <a href="https://tools.openehr.org/designer/">https://tools.openehr.org/designer</a>
+   (Best if you open this link in a new tab).</p>
+</li>
+<li>
+<p>Login:       <code>freshehr_training</code>
+   Password:    <code>ad4freshtraining</code></p>
+</li>
+<li>
+<p>Choose the repository allocated to you – (A) Aberdeen, (B) Balloch, (C) Carnoustie, (D) Dundee, (E) Edinburgh</p>
+</li>
+<li>
+<p>Find ‘Nursing Admission Assessment STARTER.v0' in the list of templates. This will open the template.</p>
+</li>
+<li>
+<p>Open the original <a href="Nursing%20Admission%20Assessment.pdf">'Nursing Admission Assessment paper form'</a><br />
+   (Best opened in a new tab).</p>
+</li>
+</ol>
+<p><img alt="" src="images/nursing-admission.png" /></p>
+<h1 id="practical-modelling-tasks">Practical modelling tasks</h1>
+<h2 id="a-tidy-the-basic-template">A. Tidy the basic template</h2>
+<h3 id="problemdiagnosis">Problem/Diagnosis</h3>
+<ul>
+<li>
+<p>Rename the Problem/Diagnosis archetype to 'Main Diagnosis'</p>
+</li>
+<li>
+<p>Constrain out everything apart from 'Problem/Diagnosis name'</p>
+</li>
+</ul>
+<h3 id="adverse-reaction-risk">Adverse Reaction Risk</h3>
+<ul>
+<li>
+<p>Pull in the 'Adverse Reaction Risk' archetype</p>
+</li>
+<li>
+<p>Set it's occurrences to 0..* to allow multiple allergies to be recorded.</p>
+</li>
+<li>
+<p>Constrain out everything apart from 'Substance' and 'Manifestation'</p>
+</li>
+<li>
+<p>Rename ‘Manifestation’ to ‘Reaction Details’ and make it mandatory</p>
+</li>
+</ul>
+<h3 id="medication-order">Medication Order</h3>
+<ul>
+<li>
+<p>Clone 'Specific direction description'</p>
+</li>
+<li>
+<p>Rename one to 'Dose' and the other to 'Frequency'</p>
+</li>
+</ul>
+<h3 id="vital-signs-section">Vital Signs section</h3>
+<ul>
+<li>
+<p>Pull in Pulse Oximetry into Vital Signs section</p>
+</li>
+<li>
+<p>Constrain out everything apart from 'SpO2' ratio</p>
+</li>
+<li>
+<p>Make 'systolic' and 'diastolic' Blood pressure mandatory</p>
+</li>
+</ul>
+<h3 id="add-a-clinical-frailty-scale">Add a Clinical Frailty scale</h3>
+<p>Go to the International CKM</p>
+<p><a href="https://ckm.openehr.org/ckm/archetypes/1013.1.4691/export">https://ckm.openehr.org/ckm/archetypes/1013.1.4691/export</a></p>
+<p>(Best if you open this link in a new tab).</p>
+<ul>
+<li>
+<p>Press the ‘Export ADL’ button and save the archetype somewhere on your system</p>
+</li>
+<li>
+<p>Go back into Archetype Designer and go to top-menu-&gt;‘Import’ then either Browse to your file or drag and drop then Upload.</p>
+</li>
+<li>
+<p>Go back to your template, click on ‘content’, then pull in the Clinical Frailty scale from the list of archetypes on the right.</p>
+</li>
+</ul>
+<h2 id="b-create-a-new-local-archetype-additional-information-on-admission">B. Create a new local archetype - Additional information on admission</h2>
+<p>The nurses have used the templates you created but have asked for some changes.</p>
+<p>You can view the original document here</p>
+<p><a href="Additional%20information%20on%20admission.pdf">'Additional Information on Admission'</a> (Best if you open this link in a new tab).</p>
+<p><img alt="" src="images/additional-info.png" /></p>
+<h2 id="additional-information-tasks">Additional information Tasks</h2>
+<ul>
+<li>Create a new ADMIN_ENTRY archetype called ‘Inpatient admission details’ then add these ‘element’ datapoints ...</li>
+</ul>
+<p><strong>Mode of access</strong></p>
+<pre><code>        Ambulatory
+
+        Wheelchair
+
+        Stretcher
+
+        Other       _________________________________
+</code></pre>
+<p><strong>Transported with  Oxygen</strong></p>
+<pre><code>        Monitor
+
+        IV
+
+        Other       _________________________________
+</code></pre>
+<p><strong>Admission method  Waiting list</strong></p>
+<pre><code>        Booked
+
+        Planned
+
+        A&amp;E department
+
+        General Practitioner
+
+        Bed Bureau
+
+            Consultant Clinic
+
+        Other           ____________________________
+</code></pre>
+<p><strong>Additional Help needed</strong></p>
+<pre><code>    Yes          No
+</code></pre>
+<p>Once you have created your new archetype, go back to your template. Highlight ‘content’ and add your new archetype then Save it.</p>
+<h2 id="c-form-centric-to-patient-centric">C. 'Form-centric' to 'Patient-centric'?</h2>
+<p>Think about how we might re-organise this information into multiple templates to make it more 'patient-centric' and reduce the data entry burden for the nurse (and patient!)</p>
+<p>What information is about the patient 'globally' versus what is about the immediate clinical context.</p>
+<p>List any parts of this dataset that might be handled more globally for the patient.</p>
+<h2 id="further-reading">Further reading</h2>
+<h4 id="general-information">General Information:</h4>
 <p>openEHR website: https://www.openehr.org/</p>
 <p>openEHR videos and presentations: https://www.youtube.com/c/openehr/featured</p>
 <p>openEHR Discourse (discussion forum): https://discourse.openehr.org/</p>
-<p>What is an open platform? - https://ewandavis.net/</p>
+<p>What is an open platform? - https://ewandavis.net</p>
 <p>What is openEHR? - Introduction: https://www.openehr.org/about/what_is_openehr</p>
 <p>openEHR Zotero library: https://www.zotero.org/libraries</p>
 <p>Clinical Knowledge Managers (CKMs) - archetype repositories and governance tools:</p>
@@ -371,7 +470,7 @@
 <p>Social Care Project on Apperta CKM: https://ckm.apperta.org/ckm/projects/1051.61.50
 A repository for the social care related archetypes and templates that we have been working on for various use cases
 Care Home Dataset template: https://ckm.apperta.org/ckm/templates/1051.57.273</p>
-<p>Based on the care home data inventory described in a recent paper by Lucy Johnston et al from Edinburgh Napier University, which is available here: https://www.medrxiv.org/content/10.1101/2020.08.17.20176503v2 </p>
+<p>Based on the care home data inventory described in a recent paper by Lucy Johnston et al from Edinburgh Napier University, which is available here: https://www.medrxiv.org/content/10.1101/2020.08.17.20176503v2</p>
 <p>The original data inventory is shown below, along with another care home dataset that we have used as an example in our data models.
 <img alt="" src="images/care-home-data-stds.png" /></p>
 
