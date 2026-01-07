@@ -334,7 +334,7 @@
    Password:    <code>ad4freshtraining</code></p>
 </li>
 <li>
-<p>Choose the repository allocated to you – (A) Aberdeen, (B) Brechin, (C) Crieff, (D) Dundee, (E) Ellon, (F) Forfar,  (G) Glasgow, (H) Harris, (I) Inverness, (J) Jedburgh</p>
+<p>Choose the repository allocated to you – (A) Aberdeen, (B) Brechin, (C) Crieff, (D) Dundee, (E) Ellon, (F) Forfar,  (G) Glasgow, (H) Hamilton, (I) Irvine, (J) Jedburgh</p>
 </li>
 <li>
 <p>Find ‘Nursing Admission Assessment STARTER.v0' in the list of templates. This will open the template.</p>
@@ -359,10 +359,13 @@
 <h3 id="adverse-reaction-risk">Adverse Reaction Risk</h3>
 <ul>
 <li>
-<p>Pull in the 'Adverse Reaction Risk' archetype</p>
+<p>Pull in the 'Adverse Reaction Risk v2' archetype</p>
 </li>
 <li>
 <p>Set it's occurrences to 0..* to allow multiple allergies to be recorded.</p>
+</li>
+<li>
+<p>Add 'Averse Reaction event' Cluster to the <code>Reaction details</code> slot</p>
 </li>
 <li>
 <p>Constrain out everything apart from 'Substance' and 'Manifestation'</p>
@@ -443,7 +446,7 @@
 
         Bed Bureau
 
-            Consultant Clinic
+        Consultant Clinic
 
         Other           ____________________________
 </code></pre>
@@ -455,6 +458,7 @@
 <p>Think about how we might re-organise this information into multiple templates to make it more 'patient-centric' and reduce the data entry burden for the nurse (and patient!)</p>
 <p>What information is about the patient 'globally' versus what is about the immediate clinical context.</p>
 <p>List any parts of this dataset that might be handled more globally for the patient.</p>
+<p><a href="https://freshehr.notion.site/Introduction-to-the-CGEM-Framework-115ed58514b344da825c3b42c372aff2?pvs=74">CGEM framework</a></p>
 <h2 id="further-reading">Further reading</h2>
 <h4 id="general-information">General Information:</h4>
 <p>openEHR website: https://www.openehr.org/</p>
@@ -463,16 +467,7 @@
 <p>What is an open platform? - https://ewandavis.net</p>
 <p>What is openEHR? - Introduction: https://www.openehr.org/about/what_is_openehr</p>
 <p>openEHR Zotero library: https://www.zotero.org/libraries</p>
-<p>Clinical Knowledge Managers (CKMs) - archetype repositories and governance tools:</p>
 <p>International CKM: https://ckm.openehr.org/ckm/</p>
-<p>Apperta CKM (UK): https://ckm.apperta.org/ckm/</p>
-<h4 id="social-care-examples">Social Care Examples:</h4>
-<p>Social Care Project on Apperta CKM: https://ckm.apperta.org/ckm/projects/1051.61.50
-A repository for the social care related archetypes and templates that we have been working on for various use cases
-Care Home Dataset template: https://ckm.apperta.org/ckm/templates/1051.57.273</p>
-<p>Based on the care home data inventory described in a recent paper by Lucy Johnston et al from Edinburgh Napier University, which is available here: https://www.medrxiv.org/content/10.1101/2020.08.17.20176503v2</p>
-<p>The original data inventory is shown below, along with another care home dataset that we have used as an example in our data models.
-<img alt="" src="images/care-home-data-stds.png" /></p>
 
 
 
