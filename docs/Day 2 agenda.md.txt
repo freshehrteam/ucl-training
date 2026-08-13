@@ -9,36 +9,36 @@ In this session we will go further into the key ideas behind archetypes and temp
 
 Finally there will be a practical introduction to the openEHR Archetype Designer clinical modelling tool, via a worked example based on a real clinical dataset, and the openEHR Clinical Knowledge Manager.
 
-- Archetype modelling in more detail 
-- Build an openEHR app demo 
-- Practical  modelling        
+- Archetype modelling in more detail
+- Build an openEHR app demo
+- Practical  modelling
 
 ## Practical session - Getting started
 
 1. Open a web browser – Chrome or Firefox are best
 
-2. Go to [https://tools.openehr.org/designer](https://tools.openehr.org/designer/) 
+2. Go to [https://tools.openehr.org/designer](https://tools.openehr.org/designer/)
 (Best if you open this link in a new tab).
 
 
-3. Login: 		`freshehr_training`	
+3. Login: 		`freshehr_training`
    Password: 	`ad4freshtraining`
 
-4. Choose the repository allocated to you – (A) Aberdeen, (B) Balloch, (C) Carnoustie, (D) Dundee, (E) Edinburgh 
+4. Choose the repository allocated to you – (A) Aberdeen, (B) Balloch, (C) Carnoustie, (D) Dundee, (E) Edinburgh
 
 5. Find ‘Nursing Admission Assessment STARTER.v0' in the list of templates. This will open the template.
 
-6. Open the original ['Nursing Admission Assessment paper form'](Nursing%20Admission%20Assessment.pdf)  
+6. Open the original ['Nursing Admission Assessment paper form'](Nursing%20Admission%20Assessment.pdf)
     (Best opened in a new tab).
 
-	
+
 ![](images/nursing-admission.png)
 
 # Practical modelling tasks
 
 ## A. Tidy the basic template
 
-### Problem/Diagnosis	
+### Problem/Diagnosis
 
  - Rename the Problem/Diagnosis archetype to 'Main Diagnosis'
 
@@ -49,7 +49,7 @@ Finally there will be a practical introduction to the openEHR Archetype Designer
 - Pull in the 'Adverse Reaction Risk' archetype
 
 - Set it's occurrences to 0..* to allow multiple allergies to be recorded.
-  
+
 - Constrain out everything apart from 'Substance' and 'Manifestation'
 
 - Rename ‘Manifestation’ to ‘Reaction Details’ and make it mandatory
@@ -71,7 +71,7 @@ Finally there will be a practical introduction to the openEHR Archetype Designer
 
 ### Add a Clinical Frailty scale
 
-Go to the International CKM 
+Go to the International CKM
 
 [https://ckm.openehr.org/ckm/archetypes/1013.1.4691/export](https://ckm.openehr.org/ckm/archetypes/1013.1.4691/export)
 
@@ -87,7 +87,7 @@ Go to the International CKM
 
 The nurses have used the templates you created but have asked for some changes.
 
-You can view the original document here  
+You can view the original document here
 
 ['Additional Information on Admission'](Additional%20information%20on%20admission.pdf) (Best if you open this link in a new tab).
 
@@ -98,43 +98,43 @@ You can view the original document here
 
 - Create a new ADMIN_ENTRY archetype called ‘Inpatient admission details’ then add these ‘element’ datapoints ...
 
-**Mode of access**	
+**Mode of access**
 
-			Ambulatory  	
+			Ambulatory
 
-			Wheelchair	
+			Wheelchair
 
-			Stretcher	
-
-			Other		_________________________________
-
-**Transported with	Oxygen**	
-
-			Monitor	
-
-			IV		
+			Stretcher
 
 			Other		_________________________________
 
-**Admission method	Waiting list**		
+**Transported with	Oxygen**
 
-			Booked		
+			Monitor
 
-			Planned		
+			IV
 
-			A&E department	
+			Other		_________________________________
 
-			General Practitioner	
+**Admission method	Waiting list**
 
-			Bed Bureau	
+			Booked
 
-				Consultant Clinic	
+			Planned
 
-			Other			____________________________		
+			A&E department
 
-**Additional Help needed**	
+			General Practitioner
 
-		Yes  	     No  
+			Bed Bureau
+
+				Consultant Clinic
+
+			Other			____________________________
+
+**Additional Help needed**
+
+		Yes  	     No
 
 Once you have created your new archetype, go back to your template. Highlight ‘content’ and add your new archetype then Save it.
 
@@ -178,7 +178,7 @@ Social Care Project on Apperta CKM: https://ckm.apperta.org/ckm/projects/1051.61
 A repository for the social care related archetypes and templates that we have been working on for various use cases
 Care Home Dataset template: https://ckm.apperta.org/ckm/templates/1051.57.273
 
-Based on the care home data inventory described in a recent paper by Lucy Johnston et al from Edinburgh Napier University, which is available here: https://www.medrxiv.org/content/10.1101/2020.08.17.20176503v2 
+Based on the care home data inventory described in a recent paper by Lucy Johnston et al from Edinburgh Napier University, which is available here: https://www.medrxiv.org/content/10.1101/2020.08.17.20176503v2
 
 The original data inventory is shown below, along with another care home dataset that we have used as an example in our data models.
 ![](images/care-home-data-stds.png)

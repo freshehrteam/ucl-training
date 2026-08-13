@@ -1,14 +1,160 @@
-# Clinical record modelling workshop Session 1
 
+![img_3.png](img_3.png)
+# Clinical record modelling workshop
+
+### https://freshehrteam.github.io/ucl-training/
+![img_2.png](img_2.png)
 ## Agenda
- 
- This session we will describe the challenge of building healthIT and present an overview of openEHR, the open platform ecosystem and the unique 2-level clinical modelling methodology, developed by the openEHR community.                                 
- 
-- What is openEHR?                        
-- Introduction  to Archetypes and Templates
+
+In this session we will go further into the key ideas behind archetypes and templates, followed by a practical demonstration of building an openEHR-based app
+
+Finally there will be a practical introduction to the openEHR Archetype Designer clinical modelling tool, via a worked example based on a real clinical dataset, and the openEHR Clinical Knowledge Manager.
+
+- Archetype modelling in more detail
+- Build an openEHR app demo
+- Practical  modelling
+
+## Practical session - Getting started
+
+1. Open a web browser – Chrome or Firefox are best
+
+2. Go to [https://tools.openehr.org/designer](https://tools.openehr.org/designer/)
+   (Best if you open this link in a new tab).
 
 
-### Further reading
+3. Login: 		`freshehr_training`
+   Password: 	`ad4freshtraining`
+
+4. Choose the repository allocated to you – (A) Aberdeen, (B) Brechin, (C) Crieff, (D) Dundee, (E) Ellon, (F) Forfar,  (G) Glasgow, (H) Hamilton, (I) Irvine, (J) Jedburgh
+
+5. Find ‘Nursing Admission Assessment STARTER.v0' in the list of templates. This will open the template.
+
+6. Open the original ['Nursing Admission Assessment paper form'](Nursing%20Admission%20Assessment.pdf)  
+   (Best opened in a new tab).
+
+
+![](images/nursing-admission.png)
+
+# Practical modelling tasks
+
+## A. Tidy the basic template
+
+### Problem/Diagnosis
+
+- Rename the Problem/Diagnosis archetype to 'Main Diagnosis'
+
+- Constrain out everything apart from 'Problem/Diagnosis name'
+
+### Adverse Reaction Risk
+
+- Pull in the 'Adverse Reaction Risk v2' archetype
+
+- Set it's occurrences to 0..* to allow multiple allergies to be recorded.
+
+- Add 'Averse Reaction event' Cluster to the `Reaction details` slot
+
+- Constrain out everything apart from 'Substance' and 'Manifestation'
+
+- Rename ‘Manifestation’ to ‘Reaction Details’ and make it mandatory
+
+### Medication Order
+
+- Clone 'Specific direction description'
+
+- Rename one to 'Dose' and the other to 'Frequency'
+
+### Vital Signs section
+
+- Pull in Pulse Oximetry into Vital Signs section
+
+- Constrain out everything apart from 'SpO2' ratio
+
+- Make 'systolic' and 'diastolic' Blood pressure mandatory
+
+
+### Add a Clinical Frailty scale
+
+Go to the International CKM
+
+[https://ckm.openehr.org/ckm/archetypes/1013.1.4691/export](https://ckm.openehr.org/ckm/archetypes/1013.1.4691/export)
+
+(Best if you open this link in a new tab).
+
+- Press the ‘Export ADL’ button and save the archetype somewhere on your system
+
+- Go back into Archetype Designer and go to top-menu->‘Import’ then either Browse to your file or drag and drop then Upload.
+
+- Go back to your template, click on ‘content’, then pull in the Clinical Frailty scale from the list of archetypes on the right.
+
+## B. Create a new local archetype - Additional information on admission
+
+The nurses have used the templates you created but have asked for some changes.
+
+You can view the original document here
+
+['Additional Information on Admission'](Additional%20information%20on%20admission.pdf) (Best if you open this link in a new tab).
+
+![](images/additional-info.png)
+
+
+## Additional information Tasks
+
+- Create a new ADMIN_ENTRY archetype called ‘Inpatient admission details’ then add these ‘element’ datapoints ...
+
+**Mode of access**
+
+			Ambulatory  	
+
+			Wheelchair	
+
+			Stretcher	
+
+			Other		_________________________________
+
+**Transported with	Oxygen**
+
+			Monitor	
+
+			IV		
+
+			Other		_________________________________
+
+**Admission method	Waiting list**
+
+			Booked		
+
+			Planned		
+
+			A&E department	
+
+			General Practitioner	
+
+			Bed Bureau	
+
+			Consultant Clinic	
+
+			Other			____________________________		
+
+**Additional Help needed**
+
+		Yes  	     No  
+
+Once you have created your new archetype, go back to your template. Highlight ‘content’ and add your new archetype then Save it.
+
+## C. 'Form-centric' to 'Patient-centric'?
+
+Think about how we might re-organise this information into multiple templates to make it more 'patient-centric' and reduce the data entry burden for the nurse (and patient!)
+
+What information is about the patient 'globally' versus what is about the immediate clinical context.
+
+List any parts of this dataset that might be handled more globally for the patient.
+
+[CGEM framework](https://freshehr.notion.site/Introduction-to-the-CGEM-Framework-115ed58514b344da825c3b42c372aff2?pvs=74)
+
+
+## Further reading
+
+#### General Information:
 
 openEHR website: https://www.openehr.org/
 
@@ -16,28 +162,12 @@ openEHR videos and presentations: https://www.youtube.com/c/openehr/featured
 
 openEHR Discourse (discussion forum): https://discourse.openehr.org/
 
-What is an open platform? - https://inidus.com/what-is-an-open-platform/
+What is an open platform? - https://ewandavis.net
 
 What is openEHR? - Introduction: https://www.openehr.org/about/what_is_openehr
 
 
 openEHR Zotero library: https://www.zotero.org/libraries
 
-
-Clinical Knowledge Managers (CKMs) - archetype repositories and governance tools:
-
 International CKM: https://ckm.openehr.org/ckm/
 
-Apperta CKM (UK): https://ckm.apperta.org/ckm/
-
-
-#### Social Care Examples:
-
-Social Care Project on Apperta CKM: https://ckm.apperta.org/ckm/projects/1051.61.50
-A repository for the social care related archetypes and templates that we have been working on for various use cases
-Care Home Dataset template: https://ckm.apperta.org/ckm/templates/1051.57.273
-
-Based on the care home data inventory described in a recent paper by Lucy Johnston et al from Edinburgh Napier University, which is available here: https://www.medrxiv.org/content/10.1101/2020.08.17.20176503v2 
-
-The original data inventory is shown below, along with another care home dataset that we have used as an example in our data models.
-![](images/care-home-data-stds.png)
