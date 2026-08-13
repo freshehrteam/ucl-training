@@ -1,5 +1,8 @@
-# Clinical record modelling workshop Session 2
+![UCL logo](img.png)
+# Clinical record modelling workshop
 
+### https://freshehrteam.github.io/ucl-training/
+![img_2.png](img_2.png)
 ## Agenda
 
 In this session we will go further into the key ideas behind archetypes and templates, followed by a practical demonstration of building an openEHR-based app
@@ -135,8 +138,16 @@ You can view the original document here
 
 Once you have created your new archetype, go back to your template. Highlight ‘content’ and add your new archetype then Save it.
 
+## C. 'Form-centric' to 'Patient-centric'?
 
-### Further reading
+Think about how we might re-organise this information into multiple templates to make it more 'patient-centric' and reduce the data entry burden for the nurse (and patient!)
+
+What information is about the patient 'globally' versus what is about the immediate clinical context.
+
+List any parts of this dataset that might be handled more globally for the patient.
+
+
+## Further reading
 
 #### General Information:
 
@@ -146,7 +157,7 @@ openEHR videos and presentations: https://www.youtube.com/c/openehr/featured
 
 openEHR Discourse (discussion forum): https://discourse.openehr.org/
 
-What is an open platform? - https://inidus.com/what-is-an-open-platform/
+What is an open platform? - https://ewandavis.net
 
 What is openEHR? - Introduction: https://www.openehr.org/about/what_is_openehr
 
