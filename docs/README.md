@@ -1,10 +1,19 @@
 
-![img_3.png](img_3.png)
+![customer.png](images/customer.png)
 # Clinical record modelling workshop
 
 ### https://freshehrteam.github.io/ucl-training/
 ![img_2.png](img_2.png)
 ## Agenda
+
+ 
+| Topic                                    | Dtn. | Start | End   |
+| ---------------------------------------- | ---- | ----- | ----- |
+| Intro			 ?                         | 10   | 09:00 | 09:10 |
+| What is openEHR?                         | 45   | 09:10 | 09:55 |
+| Break                                    | 10   | 09:55 | 10:05 |
+| Introduction  to Archetype and Templates | 45   | 10:05 | 10:50 |
+
 
 In this session we will go further into the key ideas behind archetypes and templates, followed by a practical demonstration of building an openEHR-based app
 
