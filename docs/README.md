@@ -1,55 +1,73 @@
 
 ![customer.png](images/customer.png)
-# Clinical Modelling Workshop
+<br />
 
-## Amsterdam - 21 September 2026
+# EHRCON26 Clinical Modelling Workshop
 
-### https://freshehrteam.github.io/ucl-training/
+### 21 September 2026 - Amsterdam
+<br />
+
+https://freshehrteam.github.io/ucl-training/
+<br />
+
 ![img_2.png](img_2.png)
+<br />
 
 ## Agenda
- 
-| Topic                                    | Dtn. | Start | End   |
-| ---------------------------------------- | ---- | ----- | ----- |
-| Intro			                           | 10   | 09:00 | 09:10 |
-| What is openEHR?                         | 45   | 09:10 | 09:55 |
-| Break                                    | 10   | 09:55 | 10:05 |
-| Introduction  to Archetype and Templates | 45   | 10:05 | 10:50 |
 
+| Time          | Activity         |
+| --------------| -----------------|
+| 08:30 - 09:00 | Arrival and set-up |
+| 09:00 - 09:15 | Welcome and introductions|
+| 09:15 - 10:00 | Introduction to openEHR Clinical Modelling / ‘Unconference’ Sessions |
+| 10:00 - 10:30 | **Coffee break** |
+| 10:30 - 11:45 | Practical Clinical Modelling Workshop / ‘Unconference’ Sessions |
+| 11:45 - 12:00 | Summary and wrap-up |
+| 12:00 - 13:00 | **Lunch** |
+<br />
+<br />
 
-In this session, we will go further into the key ideas behind archetypes and templates. There will be a practical introduction to the openEHR Clinical Knowledge Manager and Archetype Designer clinical modelling tool, via a worked example based on a real clinical dataset.
+# Practical Clinical Modelling Workshop
 
+In this session, we will go further into the key ideas behind archetypes and templates. 
 
+There will be a practical introduction to the openEHR Clinical Knowledge Manager and Archetype Designer clinical modelling tool, via a worked example based on a real clinical dataset.
+<br />
+<br />
 ## Getting started
 
-1. Open a web browser (Chrome or Firefox are best)
+- Open a web browser (Chrome or Firefox works best)
 
-2. Go to [https://tools.openehr.org/designer](https://tools.openehr.org/designer/)  (Best opened in a new tab)
+- Go to [https://tools.openehr.org/designer](https://tools.openehr.org/designer/)  (Best opened in a new tab)
 
 
-3. Login: 		`freshehr_training`
+- Login: 		`freshehr_training`
    Password: 	`ad4freshtraining`
 
-4. Choose the repository allocated to you – (A) Aberdeen, (B) Brechin, (C) Crieff, (D) Dundee, (E) Ellon, (F) Forfar,  (G) Glasgow, (H) Hamilton, (I) Irvine, (J) Jedburgh
+- Choose the repository allocated to you – (A) Aberdeen, (B) Brechin, (C) Crieff, (D) Dundee, (E) Ellon, (F) Forfar,  (G) Glasgow, (H) Hamilton, (I) Irvine, (J) Jedburgh
 
-5. Select `Nursing Admission Assessment STARTER.v0` in the list of templates
+- Select `Nursing Admission Assessment STARTER.v0` in the list of templates
 
-6. Open the original ['Nursing Admission Assessment paper form'](Nursing%20Admission%20Assessment.pdf) (Best opened in a new tab)
+- Open the original ['Nursing Admission Assessment paper form'](Nursing%20Admission%20Assessment.pdf) (Best opened in a new tab)
 
+<br />
 
 ![](images/nursing-admission.png)
+<br />
 
-# Practical modelling tasks
+## Practical modelling tasks
 
-## A. Tidy and extend the starter template
+### A. Tidy and extend the starter template
+<br />
 
-### Problem/Diagnosis
+**Problem/Diagnosis**
 
 - Rename the `Problem/Diagnosis EVALUATION archetype` to 'Main Diagnosis'
 
 - Constrain out everything apart from 'Problem/Diagnosis name'
+<br />
 
-### Adverse Reaction Risk
+**Adverse Reaction Risk**
 
 - Add the `Adverse reaction risk EVALUATION archetype` after 'Problem/Diagnosis'
 
@@ -62,22 +80,25 @@ In this session, we will go further into the key ideas behind archetypes and tem
 - Constrain out everything apart from 'Specific substance' and 'Manifestation'
 
 - Rename ‘Manifestation’ to ‘Reaction details’ and make it mandatory
+<br />
 
-### Medication Order
+**Medication Order**
 
 - Clone 'Specific directions description'
 
 - Rename one to 'Dose' and the other to 'Frequency'
+<br />
 
-### Vital Signs section
+**Vital Signs section**
 
 - Add the `Pulse oximetry OBSERVATION archetype` into the Vital Signs template section
 
 - Constrain out everything apart from 'SpO2' ratio
 
 - Make 'Systolic' and 'Diastolic' in 'Blood pressure' mandatory
+<br />
 
-### Add Clinical Frailty Scale
+**Add Clinical Frailty Scale**
 
 - Find the `Clinical Frailty Scale (CFS) OBSERVATION archetype` on the openEHR International CKM: [https://ckm.openehr.org/ckm/archetypes/1013.1.4691/export](https://ckm.openehr.org/ckm/archetypes/1013.1.4691/export) (Best opened in a new tab)
 
@@ -86,16 +107,23 @@ In this session, we will go further into the key ideas behind archetypes and tem
 - Go back into Archetype Designer and go to 'Import' (top menu), then either 'Browse' to find the file on your system or drag and drop it into the grey box, then click 'Upload'
 
 - Go back to your template, click on ‘content’, then pull in the Clinical Frailty Scale from the list of archetypes on the right
+<br />
 
-## B. Create a new local archetype
+### B. Create a new local archetype
 
 - After reviewing the template, the end users (nurses) have asked for a new section to be added for recording some additional information on admission
 
 - You can view the original document here: ['Additional Information on Admission'](Additional%20information%20on%20admission.pdf) (Best opened in a new tab)
+<br />
 
 ![](images/additional-info.png)
+<br />
+<br />
+
+- There is no suitable existing archetype in the CKM, so we need to create a new one to cover these additional requirements
 
 - Create a new ADMIN_ENTRY archetype called `Inpatient admission details` and then add the following data elements:
+<br />
 
 **Mode of access**
 
@@ -106,6 +134,7 @@ In this session, we will go further into the key ideas behind archetypes and tem
 			Stretcher	
 
 			Other		_________________________________
+<br />
 
 **Transported with**
 
@@ -116,6 +145,7 @@ In this session, we will go further into the key ideas behind archetypes and tem
 			IV		
 
 			Other		_________________________________
+<br />
 
 **Admission method**
 
@@ -134,16 +164,19 @@ In this session, we will go further into the key ideas behind archetypes and tem
 			Consultant Clinic	
 
 			Other			____________________________		
+<br />
 
 **Additional Help needed**
 
 		Yes  	     No  
+<br />
 
 - Once you have created your new archetype, go back to your template
 
 - Select ‘content’, add your new archetype, and then Save the template
+<br />
 
-## C. From 'Form-centric' to 'Patient-centric' modelling
+### C. From 'Form-centric' to 'Patient-centric' modelling
 
 - Think about how we might re-organise this information into multiple templates to make it more 'patient-centric' and reduce the data entry burden for the nurses (and patients!)
 
