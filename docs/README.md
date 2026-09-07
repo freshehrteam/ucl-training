@@ -95,7 +95,7 @@ In this session, we will go further into the key ideas behind archetypes and tem
 
 ![](images/additional-info.png)
 
-- Create a new ADMIN_ENTRY archetype called `Inpatient admission details` then add the following data elements:
+- Create a new ADMIN_ENTRY archetype called `Inpatient admission details` and then add the following data elements:
 
 **Mode of access**
 
@@ -107,16 +107,20 @@ In this session, we will go further into the key ideas behind archetypes and tem
 
 			Other		_________________________________
 
-**Transported with	Oxygen**
+**Transported with**
 
+            Oxygen
+			
 			Monitor	
 
 			IV		
 
 			Other		_________________________________
 
-**Admission method	Waiting list**
+**Admission method**
 
+			Waiting list
+			
 			Booked		
 
 			Planned		
@@ -135,35 +139,17 @@ In this session, we will go further into the key ideas behind archetypes and tem
 
 		Yes  	     No  
 
-Once you have created your new archetype, go back to your template. Highlight ‘content’ and add your new archetype then Save it.
+- Once you have created your new archetype, go back to your template
 
-## C. 'Form-centric' to 'Patient-centric'?
+- Select ‘content’, add your new archetype, and then Save the template
 
-Think about how we might re-organise this information into multiple templates to make it more 'patient-centric' and reduce the data entry burden for the nurse (and patient!)
+## C. From 'Form-centric' to 'Patient-centric' modelling
 
-What information is about the patient 'globally' versus what is about the immediate clinical context.
+- Think about how we might re-organise this information into multiple templates to make it more 'patient-centric' and reduce the data entry burden for the nurses (and patients!)
 
-List any parts of this dataset that might be handled more globally for the patient.
+- What information is about the patient in general (global) and what is about the immediate clinical context (contextual)?
 
-[CGEM framework](https://freshehr.notion.site/Introduction-to-the-CGEM-Framework-115ed58514b344da825c3b42c372aff2?pvs=74)
+- List any parts of this dataset that could be handled more globally for the patient
 
-
-## Further reading
-
-#### General Information:
-
-openEHR website: https://www.openehr.org/
-
-openEHR videos and presentations: https://www.youtube.com/c/openehr/featured
-
-openEHR Discourse (discussion forum): https://discourse.openehr.org/
-
-What is an open platform? - https://ewandavis.net
-
-What is openEHR? - Introduction: https://www.openehr.org/about/what_is_openehr
-
-
-openEHR Zotero library: https://www.zotero.org/libraries
-
-International CKM: https://ckm.openehr.org/ckm/
+- Further reading: [CGEM framework](https://freshehr.notion.site/Introduction-to-the-CGEM-Framework-115ed58514b344da825c3b42c372aff2?pvs=74)
 
