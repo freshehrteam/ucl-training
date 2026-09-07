@@ -1,34 +1,31 @@
 
 ![customer.png](images/customer.png)
-# Clinical record modelling workshop
+# Clinical Modelling Workshop
+
+## Amsterdam - 21 September 2026
 
 ### https://freshehrteam.github.io/ucl-training/
 ![img_2.png](img_2.png)
-## Agenda
 
+## Agenda
  
 | Topic                                    | Dtn. | Start | End   |
 | ---------------------------------------- | ---- | ----- | ----- |
-| Intro			 ?                         | 10   | 09:00 | 09:10 |
+| Intro			                           | 10   | 09:00 | 09:10 |
 | What is openEHR?                         | 45   | 09:10 | 09:55 |
 | Break                                    | 10   | 09:55 | 10:05 |
 | Introduction  to Archetype and Templates | 45   | 10:05 | 10:50 |
 
 
-In this session we will go further into the key ideas behind archetypes and templates, followed by a practical demonstration of building an openEHR-based app
+In this session, we will go further into the key ideas behind archetypes and templates. There will be a practical introduction to the openEHR Clinical Knowledge Manager and Archetype Designer clinical modelling tool, via a worked example based on a real clinical dataset.
 
-Finally there will be a practical introduction to the openEHR Archetype Designer clinical modelling tool, via a worked example based on a real clinical dataset, and the openEHR Clinical Knowledge Manager.
 
-- Archetype modelling in more detail
-- Build an openEHR app demo
-- Practical  modelling
+## Getting started
 
-## Practical session - Getting started
-
-1. Open a web browser – Chrome or Firefox are best
+1. Open a web browser (Chrome or Firefox are best)
 
 2. Go to [https://tools.openehr.org/designer](https://tools.openehr.org/designer/)
-   (Best if you open this link in a new tab).
+   (Best openen in a new tab)
 
 
 3. Login: 		`freshehr_training`
@@ -36,10 +33,10 @@ Finally there will be a practical introduction to the openEHR Archetype Designer
 
 4. Choose the repository allocated to you – (A) Aberdeen, (B) Brechin, (C) Crieff, (D) Dundee, (E) Ellon, (F) Forfar,  (G) Glasgow, (H) Hamilton, (I) Irvine, (J) Jedburgh
 
-5. Find ‘Nursing Admission Assessment STARTER.v0' in the list of templates. This will open the template.
+5. Select ‘Nursing Admission Assessment STARTER.v0' in the list of templates
 
 6. Open the original ['Nursing Admission Assessment paper form'](Nursing%20Admission%20Assessment.pdf)  
-   (Best opened in a new tab).
+   (Best opened in a new tab)
 
 
 ![](images/nursing-admission.png)
