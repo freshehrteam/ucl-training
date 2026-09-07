@@ -24,8 +24,7 @@ In this session, we will go further into the key ideas behind archetypes and tem
 
 1. Open a web browser (Chrome or Firefox are best)
 
-2. Go to [https://tools.openehr.org/designer](https://tools.openehr.org/designer/)
-   (Best openen in a new tab)
+2. Go to [https://tools.openehr.org/designer](https://tools.openehr.org/designer/)  (Best opened in a new tab)
 
 
 3. Login: 		`freshehr_training`
@@ -33,79 +32,70 @@ In this session, we will go further into the key ideas behind archetypes and tem
 
 4. Choose the repository allocated to you – (A) Aberdeen, (B) Brechin, (C) Crieff, (D) Dundee, (E) Ellon, (F) Forfar,  (G) Glasgow, (H) Hamilton, (I) Irvine, (J) Jedburgh
 
-5. Select ‘Nursing Admission Assessment STARTER.v0' in the list of templates
+5. Select `Nursing Admission Assessment STARTER.v0` in the list of templates
 
-6. Open the original ['Nursing Admission Assessment paper form'](Nursing%20Admission%20Assessment.pdf)  
-   (Best opened in a new tab)
+6. Open the original ['Nursing Admission Assessment paper form'](Nursing%20Admission%20Assessment.pdf) (Best opened in a new tab)
 
 
 ![](images/nursing-admission.png)
 
 # Practical modelling tasks
 
-## A. Tidy the basic template
+## A. Tidy and extend the starter template
 
 ### Problem/Diagnosis
 
-- Rename the Problem/Diagnosis archetype to 'Main Diagnosis'
+- Rename the `Problem/Diagnosis EVALUATION archetype` to 'Main Diagnosis'
 
 - Constrain out everything apart from 'Problem/Diagnosis name'
 
 ### Adverse Reaction Risk
 
-- Pull in the 'Adverse Reaction Risk v2' archetype
+- Add the `Adverse reaction risk EVALUATION archetype` after 'Problem/Diagnosis'
 
-- Set it's occurrences to 0..* to allow multiple allergies to be recorded.
+- Set its occurrences to 0..* to allow multiple allergies to be recorded
 
-- Add 'Averse Reaction event' Cluster to the `Reaction details` slot
+- Constrain out everything apart from 'Substance'
 
-- Constrain out everything apart from 'Substance' and 'Manifestation'
+- Add the `Adverse reaction event CLUSTER archetype` to the 'Reaction event summary' slot
 
-- Rename ‘Manifestation’ to ‘Reaction Details’ and make it mandatory
+- Constrain out everything apart from 'Specific substance' and 'Manifestation'
+
+- Rename ‘Manifestation’ to ‘Reaction details’ and make it mandatory
 
 ### Medication Order
 
-- Clone 'Specific direction description'
+- Clone 'Specific directions description'
 
 - Rename one to 'Dose' and the other to 'Frequency'
 
 ### Vital Signs section
 
-- Pull in Pulse Oximetry into Vital Signs section
+- Add the `Pulse oximetry OBSERVATION archetype` into the Vital Signs template section
 
 - Constrain out everything apart from 'SpO2' ratio
 
-- Make 'systolic' and 'diastolic' Blood pressure mandatory
+- Make 'Systolic' and 'Diastolic' in 'Blood pressure' mandatory
 
+### Add Clinical Frailty Scale
 
-### Add a Clinical Frailty scale
+- Find the `Clinical Frailty Scale (CFS) OBSERVATION archetype` on the openEHR International CKM: [https://ckm.openehr.org/ckm/archetypes/1013.1.4691/export](https://ckm.openehr.org/ckm/archetypes/1013.1.4691/export) (Best opened in a new tab)
 
-Go to the International CKM
+- Press the 'Export ADL' button and save the archetype on your system
 
-[https://ckm.openehr.org/ckm/archetypes/1013.1.4691/export](https://ckm.openehr.org/ckm/archetypes/1013.1.4691/export)
+- Go back into Archetype Designer and go to 'Import' (top menu), then either 'Browse' to find the file on your system or drag and drop it into the grey box, then click 'Upload'
 
-(Best if you open this link in a new tab).
+- Go back to your template, click on ‘content’, then pull in the Clinical Frailty Scale from the list of archetypes on the right
 
-- Press the ‘Export ADL’ button and save the archetype somewhere on your system
+## B. Create a new local archetype
 
-- Go back into Archetype Designer and go to top-menu->‘Import’ then either Browse to your file or drag and drop then Upload.
+- After reviewing the template, the end users (nurses) have asked for a new section to be added for recording some additional information on admission
 
-- Go back to your template, click on ‘content’, then pull in the Clinical Frailty scale from the list of archetypes on the right.
-
-## B. Create a new local archetype - Additional information on admission
-
-The nurses have used the templates you created but have asked for some changes.
-
-You can view the original document here
-
-['Additional Information on Admission'](Additional%20information%20on%20admission.pdf) (Best if you open this link in a new tab).
+- You can view the original document here: ['Additional Information on Admission'](Additional%20information%20on%20admission.pdf) (Best opened in a new tab)
 
 ![](images/additional-info.png)
 
-
-## Additional information Tasks
-
-- Create a new ADMIN_ENTRY archetype called ‘Inpatient admission details’ then add these ‘element’ datapoints ...
+- Create a new ADMIN_ENTRY archetype called `Inpatient admission details` then add the following data elements:
 
 **Mode of access**
 
