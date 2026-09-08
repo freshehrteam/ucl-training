@@ -24,6 +24,7 @@ https://freshehrteam.github.io/ucl-training/
 | 10:30 - 11:45 | Practical Clinical Modelling Workshop / ‘Unconference’ Sessions |
 | 11:45 - 12:00 | Summary and wrap-up |
 | 12:00 - 13:00 | **Lunch** |
+
 <br />
 <br />
 
@@ -34,12 +35,12 @@ In this session, we will go further into the key ideas behind archetypes and tem
 There will be a practical introduction to the openEHR Clinical Knowledge Manager and Archetype Designer clinical modelling tool, via a worked example based on a real clinical dataset.
 <br />
 <br />
+
 ## Getting started
 
 - Open a web browser (Chrome or Firefox works best)
 
 - Go to [https://tools.openehr.org/designer](https://tools.openehr.org/designer/)  (Best opened in a new tab)
-
 
 - Login: 		`freshehr_training`
    Password: 	`ad4freshtraining`
