@@ -1,5 +1,16 @@
-site_name: ehrCon26Clinical Record Modelling Workshop
+site_name: EHRCON26 Clinical Modelling Workshop
 theme:
     name: material
     palette:
-        primary: lightblue
+        - media: "(prefers-color-scheme: light)"
+          scheme: default
+          primary: lightblue
+          toggle:
+              icon: material/brightness-7
+              name: Switch to dark mode
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          primary: lightblue
+          toggle:
+              icon: material/brightness-4
+              name: Switch to light mode
