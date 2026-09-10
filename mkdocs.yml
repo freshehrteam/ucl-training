@@ -14,3 +14,8 @@ theme:
           toggle:
               icon: material/brightness-4
               name: Switch to light mode
+markdown_extensions:
+    - toc:
+        toc_depth: 4
+extra_css:
+    - stylesheets/extra.css

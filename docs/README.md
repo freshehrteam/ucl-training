@@ -70,18 +70,18 @@ There will be a practical introduction to the openEHR Clinical Knowledge Manager
 
 ### Practical modelling tasks
 
-#### A. Tidy and extend the starter template
+#### Exercise 1: Tidy and extend the starter template
 
 A starter template is rarely fit for purpose as-is: archetypes are deliberately broad so they can be reused everywhere, so the job of template design is narrowing each one down to what this specific form needs, and pulling in extra archetypes for what it's still missing.
 
-**Problem/Diagnosis**
+##### 1.1 Problem/Diagnosis
 
 Renaming and constraining the archetype to just what's needed keeps the form focused on what the clinician actually has to record, without hiding that the underlying archetype still supports the fuller concept elsewhere.
 
 - Rename the `Problem/Diagnosis EVALUATION archetype` to 'Main Diagnosis'
 - Constrain out everything apart from 'Problem/Diagnosis name'
 
-**Adverse Reaction Risk**
+##### 1.2 Adverse Reaction Risk
 
 Patients often have more than one allergy, so the archetype needs to repeat; reusing the 'Adverse reaction event' CLUSTER for each reaction, rather than modelling it again, is the reuse principle in action, and making the reaction detail mandatory avoids an unsafe blank entry for a safety-critical field.
 
@@ -92,14 +92,14 @@ Patients often have more than one allergy, so the archetype needs to repeat; reu
 - Constrain out everything apart from 'Specific substance' and 'Manifestation'
 - Rename ‘Manifestation’ to ‘Reaction details’ and make it mandatory
 
-**Medication Order**
+##### 1.3 Medication Order
 
 Cloning an existing data element instead of authoring a new one shows how a single archetype element can be reused twice within the same template for two different purposes.
 
 - Clone 'Specific directions description'
 - Rename one to 'Dose' and the other to 'Frequency'
 
-**Vital Signs section**
+##### 1.4 Vital Signs section
 
 Pulling in a second OBSERVATION archetype (pulse oximetry) alongside blood pressure shows how a template section aggregates several independent archetypes into one clinical picture, while making systolic/diastolic mandatory demonstrates enforcing data completeness at the template level without changing the archetype itself.
 
@@ -107,7 +107,7 @@ Pulling in a second OBSERVATION archetype (pulse oximetry) alongside blood press
 - Constrain out everything apart from 'SpO2' ratio
 - Make 'Systolic' and 'Diastolic' in 'Blood pressure' mandatory
 
-**Add Clinical Frailty Scale**
+##### 1.5 Add Clinical Frailty Scale
 
 This walks through the full reuse workflow that CKM is built around: search CKM first, and only author something new if nothing suitable already exists.
 
@@ -116,7 +116,9 @@ This walks through the full reuse workflow that CKM is built around: search CKM 
 - Go back into Archetype Designer and go to 'Import' (top menu), then either 'Browse' to find the file on your system or drag and drop it into the grey box, then click 'Upload'
 - Go back to your template, click on ‘content’, then pull in the Clinical Frailty Scale from the list of archetypes on the right
 
-#### B. Create a new local archetype
+---
+
+#### Exercise 2: Create a new local archetype
 
 After reviewing the template, the end users (nurses) have asked for a new section to be added for recording some additional information on admission.
 
@@ -128,21 +130,21 @@ There is no suitable existing archetype in the CKM for this data, so, having exh
 
 - Create a new ADMIN_ENTRY archetype called `Inpatient admission details` and then add the following data elements:
 
-**Mode of access**
+##### 2.1 Mode of access
 
 - Ambulatory
 - Wheelchair
 - Stretcher
 - Other: `_________________________________`
 
-**Transported with**
+##### 2.2 Transported with
 
 - Oxygen
 - Monitor
 - IV
 - Other: `_________________________________`
 
-**Admission method**
+##### 2.3 Admission method
 
 - Waiting list
 - Booked
@@ -153,7 +155,7 @@ There is no suitable existing archetype in the CKM for this data, so, having exh
 - Consultant Clinic
 - Other: `____________________________`
 
-**Additional Help needed**
+##### 2.4 Additional Help needed
 
 - Yes
 - No
@@ -162,7 +164,9 @@ Once you have created your new archetype, go back to your template:
 
 - Select ‘content’, add your new archetype, and then Save the template
 
-#### C. From 'Form-centric' to 'Patient-centric' modelling
+---
+
+#### Exercise 3: From 'Form-centric' to 'Patient-centric' modelling
 
 A form models one encounter, but much of what it captures (like a patient's general mobility or preferred language) doesn't change between encounters and shouldn't need re-entering every time. Recognising which data is patient-level versus context-level is what lets a template be replaced by several smaller, reusable ones.
 
