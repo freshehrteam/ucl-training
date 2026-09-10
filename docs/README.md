@@ -66,7 +66,7 @@ There will be a practical introduction to the openEHR Clinical Knowledge Manager
 - Select `Nursing Admission Assessment STARTER.v0` in the list of templates
 - Open the original ['Nursing Admission Assessment paper form'](Nursing%20Admission%20Assessment.pdf) (best opened in a new tab)
 
-![](images/nursing-admission.png)
+<p align="center"><img src="images/nursing-admission.png" alt="Nursing Admission Assessment paper form" width="60%" /></p>
 
 ### Practical modelling tasks
 
@@ -122,7 +122,7 @@ After reviewing the template, the end users (nurses) have asked for a new sectio
 
 You can view the original document here: ['Additional Information on Admission'](Additional%20information%20on%20admission.pdf) (best opened in a new tab)
 
-![](images/additional-info.png)
+<p align="center"><img src="images/additional-info.png" alt="Additional information on admission paper form" width="60%" /></p>
 
 There is no suitable existing archetype in the CKM for this data, so, having exhausted the reuse-first step, we author a new one. It's modelled as an `ADMIN_ENTRY` rather than an `OBSERVATION` or `EVALUATION` because this is admission logistics, not a clinical finding.
 
